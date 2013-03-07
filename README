@@ -1,0 +1,4 @@
+C++11 STL Tests
+
+This repository contains some code to test the efficiency of C++11 STL vs
+ordinary C data structures.
