@@ -33,7 +33,7 @@ elseif(${CMAKE_CXX_COMPILER_ID} MATCHES "Clang")
     message(FATAL_ERROR 
 	  "Compiler does not appear to support C++11. This project requires C++11")
   endif()
-elseif(MSVC)
+elseif(MSVC AND MSVC_VERSION GREATER 1600)
 # Nothing special needed for MSVC
 # Just enable all warnings for debug and set NDEBUG for release
   set(CMAKE_CXX_FLAGS_DEBUG "/W4")
